@@ -1,0 +1,6 @@
+train: D:/yolo_started/data/train/images
+val: D:/yolo_started/data/valid/images
+test: D:/yolo_started/data/test/images
+
+nc: 4
+names: ['Cavity', 'Fillings', 'Impacted Tooth', 'Implant']
