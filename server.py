@@ -4,8 +4,12 @@ from werkzeug.utils import secure_filename
 from hashlib import sha256
 from datetime import datetime
 import per as model
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}

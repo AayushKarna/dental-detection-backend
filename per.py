@@ -6,12 +6,12 @@ def predict(image):
 
     results = model(f"./{image}")
 
-    for result in results:
-        img = result.plot()
-        cv2.imshow('YOLO prediction', img)
+    # for result in results:
+    #     img = result.plot()
+    #     cv2.imshow('YOLO prediction', img)
 
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+    #     cv2.waitKey(0)
+    #     cv2.destroyAllWindows()
 
     output = []
     for result in results:
